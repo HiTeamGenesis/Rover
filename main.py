@@ -5,6 +5,8 @@ import cams
 
 if __name__ == "__main__":
     colorama.init()
-    print(colorama.Fore.GREEN + "Starting Rover Modules Core...")
 
+    logger.success("Starting Rover Modules Core...")
+    
+    logger.info("Attempting to start camera stream...")
     cams.stream_cams()
